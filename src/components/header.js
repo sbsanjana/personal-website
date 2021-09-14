@@ -1,42 +1,16 @@
-import * as React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import React from 'react';
+import Typography from '@material-ui/core/Typography';
+import Breadcrumbs from '@material-ui/core/Breadcrumbs';
+import Link from '@material-ui/core/Link';
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+
+export default function SimpleBreadcrumbs() {
+  return (
+      <>
+   <h2 style={{fontWeight:'200', fontSize:45, letterSpacing:'0.05em', color:'white'}}> hey, i'm </h2>
+   <h1 style={{ fontFamily:'Staatliches', fontWeight:'400', letterSpacing:'0.05em',  fontSytle:'italic',fontSize:100, color:'white'}}> Sanjana Badhya </h1>
+   <h2 style={{ fontWeight:'200', fontSize:45, letterSpacing:'0.05em', color:'white'}}> student. designer. programmer. </h2>
+   </>
+  );
 }
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
