@@ -26,7 +26,7 @@ export default function SimpleBreadcrumbs() {
       <Link color="inherit" href="/projects">
         projects
       </Link>
-      <Link color="inherit" href="/getting-started/installation/" onClick={handleClick}>
+      <Link color="inherit" href="/contact">
         contact
       </Link>
       {/* <Typography color="textPrimary">Breadcrumb</Typography> */}

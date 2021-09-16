@@ -83,11 +83,11 @@ const Layout = ({ children }) => {
         // alignItems="space-evenly"
       >
     <div style={{marginTop:'3em'}} >
-      <LinkedInIcon style={{color:'white', height:'45px', width:'45', marginRight:'15'}}/>
-      <GitHubIcon style={{color:'white', height:'45px', width:'45px', marginRight:'15'}}/>
-      <EmailIcon style={{color:'white', height:'45px', width:'45px', marginRight:'15'}}/>
-      <DescriptionIcon style={{color:'white', height:'45px', width:'45px', marginRight:'15'}}/>
-
+      <LinkedInIcon style={{color:'white', height:'45px', width:'45', marginRight:'15'}} onClick={() => {window.location.href = 'https://www.linkedin.com/in/sanjanabadhya/'}}/>
+      <GitHubIcon style={{color:'white', height:'45px', width:'45px', marginRight:'15'}} onClick={() => {window.location.href = 'https://www.github.com/sbsanjana'}}/>
+      <EmailIcon style={{color:'white', height:'45px', width:'45px', marginRight:'15'}} onClick={() => {document.location.href = 'mailto:sbsanjana@gmail.com'}}/>
+      <DescriptionIcon style={{color:'white', height:'45px', width:'45px', marginRight:'15'}} onClick={() => {window.location.href = 'https://drive.google.com/file/d/1vji76XmyFtvZLCGL1BRd-yALObf2gwoF/view?usp=sharing/'}}/>
+      
     </div>
     </Grid>
  

@@ -39,21 +39,20 @@ function Projects()  {
         container 
         direction="row"
         justifyContent="flex-end"
-        alignItems="baseline"
-        // xs={12} sm={6}
-        // style={{marginBottom:'5em'}}
-        >
+        alignItems="baseline">
     
         <Nav />
     </Grid>
+
     <h1 style={{ color:'white', fontFamily:'Staatliches', fontWeight:'400', letterSpacing:'0.05em', fontSize:'75px'}}> Projects</h1>
     <div style={{paddingRight:40}}>
-    <Grid item container justifyContent='flex-start'> 
+
+    <Grid item container justifyContent='center' alignItems='baseline'> 
 
     <Grid item
     container
-    sm={4}>
-            <Proj
+    sm={6} xs={10}  md={4}>
+    <Proj
     title='FactCheck'
     desc="A machine learning model run via Flask, Python, and React in order to allow users to identify whether a news headline is true or not."
     pic={Fact}
@@ -63,25 +62,25 @@ function Projects()  {
 
     <Grid item
     container
-    sm={4}>
-            <Proj
-    title='Creative Connect'
-    desc="A platform for those in the arts industry to connect, interact, and share their work with their network."
-    pic={CC}
-    url='/404'/>
-    
+    sm={6} xs={10}  md={4}>
 
+        <Proj
+        title='Creative Connect'
+        desc="A platform for those in the arts industry to connect, interact, and share their work with their network."
+        pic={CC}
+        url='/404'/>
+    
     </Grid>
 
     <Grid item
     container
-    sm={4}>
-            <Proj
-    title='Koble'
-    desc="Koble is a solution built to bridge the gap between farmers with a surplus and individuals facing food insecurity via volunteers willing to transport the food."
-    pic={Koble}
-    url='https://devpost.com/software/koble-sz863j'/>
-    
+    sm={6} xs={10}  md={4}>
+
+        <Proj
+        title='Koble'
+        desc="Koble is a solution built to bridge the gap between farmers with a surplus and individuals facing food insecurity via volunteers willing to transport the food."
+        pic={Koble}
+        url='https://devpost.com/software/koble-sz863j'/>
 
     </Grid>
 
@@ -90,30 +89,28 @@ function Projects()  {
 
 <Grid item container justifyContent='center' alignItems='baseline'> 
 
-<Grid item
-container
-sm={4}>
+    <Grid item
+    container
+    sm={8} xs={10} md={4}>
         <Proj
-title='Popcorn'
-desc="A platform build to reinvent CS education among those curious to learn, regarless of skill."
-pic={ed}/>
+        title='Popcorn'
+        desc="A platform build to reinvent CS education among those curious to learn, regarless of skill."
+        pic={ed}/>
 
-</Grid>
+    </Grid>
 
-<Grid item
-container
-sm={4}>
+    <Grid item
+    container
+    sm={8} xs={10}  md={4}>
         <Proj
-title='TravelBerlin'
-desc="An application where users can explore various attractions in Berlin while interacting with both, these attractions, and other users."
-pic={Berlin}/>
-
-
-</Grid>
+        title='TravelBerlin'
+        desc="An application where users can explore various attractions in Berlin while interacting with both, these attractions, and other users."
+        pic={Berlin}/>
+    </Grid>
 
 <Grid item
 container
-sm={4}>
+sm={8} xs={10}  md={4}>
         <Proj
 title='SmartTasking'
 desc="Build to increase productivity with easy to organize tasks combined with a smart ranking system to maximize your time."
