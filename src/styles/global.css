@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+html {
+    background-color: #1d3557
+    /* #264653; */
+  }
+  img {
+    height: '100%';
+    width: '100%';
+    /* backgroundImage: 'linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("image.jpg")' */
+
+  }
+  p {
+    color: maroon;
+  }
+  @media screen and (min-width: 1024px) {
+    .navbar{
+        font-size: 25px;
+        /* color: black */
+
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .navbar{
+        font-size: 20px;
+        /* color: black */
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .navbar{
+        font-size: 15px;
+        /* color: black */
+    }
+  }
