@@ -30,8 +30,7 @@ const IndexPage = () => (
 
     <Nav />
 </Grid>
-
-<h1 style={{ color:'white', fontFamily:'Staatliches', fontWeight:'400', letterSpacing:'0.05em', fontSize:'75px'}}> About</h1>
+<h1 style={{ color:'white', fontFamily:'Staatliches', fontWeight:'400', letterSpacing:'0.05em', fontSize:'75px'}}> Experience</h1>
 <br />
 <Grid container spacing = {2} direction='row'>
     <Grid item

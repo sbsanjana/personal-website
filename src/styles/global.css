@@ -4,6 +4,12 @@ html {
     background-color: #1d3557
     /* #264653; */
   }
+  img {
+    height: '100%';
+    width: '100%';
+    /* backgroundImage: 'linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("image.jpg")' */
+
+  }
   p {
     color: maroon;
   }
