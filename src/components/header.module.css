@@ -1,0 +1,111 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  .myName {
+    font-weight: 500;
+    font-size: 25px;
+      
+    }
+  .supplement {
+    font-weight: 300;
+    font-size: 15px;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+  .myName {
+    font-weight: 500;
+    font-size: 50px;
+      
+    }
+  .supplement {
+    font-weight: 300;
+    font-size: 20px;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+  .myName {
+    font-weight: 500;
+    font-size: 50px;
+      
+    }
+  .supplement {
+    font-weight: 300;
+    font-size: 20px;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  .myName {
+    font-weight: 700;
+    font-size: 70px;
+      
+    }
+  .supplement {
+    font-weight: 400;
+    font-size: 40px;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+  .myName {
+    font-weight: 700;
+    font-size: 65px;
+
+      
+    }
+  .supplement {
+    font-weight: 300;
+    font-size: 35px;
+  
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+  .myName {
+    font-weight: 700;
+    font-size: 100px;
+
+    }
+  .supplement {
+    font-weight: 300;
+    font-size: 40px;
+  }
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}

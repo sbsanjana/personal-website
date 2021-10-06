@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
+import * as layoutStyles from "./layout.module.css"
 import Nav from  './nav.js'
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
@@ -45,15 +45,15 @@ const Layout = ({ children }) => {
   //   height:2000,
   // };
   return (
-    <div style={{paddingLeft:120, paddingRight:120, paddingTop:30}}>
+    <div className={layoutStyles.bigDiv}>
     
     <Grid item
     container
-  direction="row"
-  justifyContent="flex-end"
-  alignItems="baseline"
-  style={{marginBottom:'5em'}} 
->
+    direction="row"
+    justifyContent="flex-end"
+    alignItems="baseline"
+    style={{marginBottom:'5em'}} 
+  >
     <Nav />
     
 
@@ -72,6 +72,20 @@ const Layout = ({ children }) => {
     <Header />
     {/* <div style={circleStyle}>
       </div> */}
+    </Grid>
+      <br />
+    <Grid item >
+    <Button 
+    className={layoutStyles.homeButton}
+    size="large"
+    style={{backgroundColor: '#E07A5F', color: '#FFFFFF'}}
+    >Contact Me</Button>
+    <> </>
+    <Button 
+    className={layoutStyles.homeButton}
+    size="large"
+    style={{backgroundColor: '#006D77', color: '#FFFFFF'}}
+    >View My Resume</Button>
     </Grid>
     <br />
 
