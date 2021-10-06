@@ -31,7 +31,7 @@ const IndexPage = () => (
     <Nav />
 </Grid>
 
-<h1 className={aboutStyles.title}> about me</h1>
+<h1 className={aboutStyles.title}  style={{fontStyle:'italic'}}> about me</h1>
 <br />
 <Grid container spacing = {2} direction='row' justifyContent='center'>
     <Grid item

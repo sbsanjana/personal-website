@@ -31,7 +31,7 @@ const IndexPage = () => {
 
     <Nav />
 </Grid>
-<h1 className={experienceStyle.title}> experience</h1>
+<h1 className={experienceStyle.title}  style={{fontStyle:'italic'}}> experience</h1>
 <br />
 <Grid item
     container 

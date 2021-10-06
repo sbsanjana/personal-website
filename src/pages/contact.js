@@ -17,12 +17,12 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import EmailIcon from '@material-ui/icons/Email';
 import DescriptionIcon from '@material-ui/icons/Description';
 
-import * as aboutStyles from './about.module.css'
+import * as contactStyle from './contact.module.css'
 
 const IndexPage = () => (
 
         // <h1>Hello.</h1>
-        <div style={{paddingLeft:120, paddingRight:120, paddingTop:30}}>
+        <div className={contactStyle.mainDiv}>
     <Grid item
     container 
     direction="row"
@@ -35,19 +35,21 @@ const IndexPage = () => (
     <Nav />
 </Grid>
 
-<h1 style={{ color:'white', fontFamily:'Staatliches', fontWeight:'400', letterSpacing:'0.05em', fontSize:'75px'}}> Contact</h1>
+<h1 className={contactStyle.title} style={{fontStyle:'italic'}}> contact me</h1>
 <br />
-<h1 style={{fontWeight:'200', color:'white'}}> Feel free to reach out to me:</h1>
+
+<h1 className={contactStyle.supplement}style={{fontWeight:'400'}}> feel free to reach out to me via:</h1>
+
 <Grid container justifyContent='center'>
-    <Grid>
-        <EmailIcon style={{height:70, width:70, marginRight:30, color:'white'}} onClick={() => {document.location.href = 'mailto:sbsanjana@gmail.com'}}/>
+    <Grid sm={2} xs={4} md={1}>
+        <EmailIcon className={contactStyle.icon}style={{height:70, width:70, marginRight:30}} onClick={() => {document.location.href = 'mailto:sbsanjana@gmail.com'}}/>
     </Grid>
 
-    <Grid>
-        <LinkedInIcon style={{height:70, width:70, marginRight:30, color:'white'}} onClick={() => {window.location.href = 'https://www.linkedin.com/in/sanjanabadhya/'}}/>
+    <Grid sm={2} xs={4} md={1}>
+        <LinkedInIcon  className={contactStyle.icon} style={{height:70, width:70, marginRight:30}} onClick={() => {window.location.href = 'https://www.linkedin.com/in/sanjanabadhya/'}}/>
     </Grid>
-    <Grid>
-        <DescriptionIcon style={{height:70, width:70, marginRight:30, color:'white'}} onClick={() => {window.location.href = 'https://drive.google.com/file/d/1vji76XmyFtvZLCGL1BRd-yALObf2gwoF/view?usp=sharing/'}}/>
+    <Grid sm={2} xs={4} md={1}>
+        <DescriptionIcon  className={contactStyle.icon} style={{height:70, width:70, marginRight:30}} onClick={() => {window.location.href = 'https://drive.google.com/file/d/1vji76XmyFtvZLCGL1BRd-yALObf2gwoF/view?usp=sharing/'}}/>
     </Grid>
     {/* <h1 style={{fontWeight:'200', fontSize:55, color:'white'}}> Feel free to email me at sbsanjana@gmail.com</h1> */}
 

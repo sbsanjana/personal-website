@@ -20,6 +20,8 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import EmailIcon from '@material-ui/icons/Email';
 import DescriptionIcon from '@material-ui/icons/Description';
+import Link from '@material-ui/core/Link';
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -76,17 +78,22 @@ const Layout = ({ children }) => {
       <br />
     <Grid item >
       <div >
+      <Link href='/contact'>
     <Button 
     className={layoutStyles.homeButton}
     size="large"
     style={{backgroundColor: '#E07A5F', color: '#FFFFFF'}}
     >Contact Me</Button>
+     </Link>
     <> </>
+    
     <Button 
     className={layoutStyles.homeButton}
     size="large"
     style={{backgroundColor: '#006D77', color: '#FFFFFF'}}
+    onClick={() => {window.location.href = 'https://drive.google.com/file/d/1vji76XmyFtvZLCGL1BRd-yALObf2gwoF/view?usp=sharing/'}}
     >View My Resume</Button>
+   
     </div>
     </Grid>
     <br />

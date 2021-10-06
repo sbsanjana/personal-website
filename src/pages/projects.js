@@ -45,7 +45,7 @@ function Projects()  {
         <Nav />
     </Grid>
 
-    <h1 className={projectStyles.title}> projects</h1>
+    <h1 className={projectStyles.title} style={{fontStyle:'italic'}}> projects</h1>
    
     <div className={projectStyles.cardDiv}>
 
