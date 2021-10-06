@@ -34,6 +34,7 @@ const useStyles = makeStyles((theme) => ({
       borderRadius: theme.spacing(0),
       "&:hover": {
         // backgroundColor: "black",
+        cursor:"pointer",
         opacity:1,
         transform: "scale3d(1.1, 1.1, 1)",
         // filter: 'blur(0px)'
@@ -87,7 +88,7 @@ function Proj(props)  {
     
     
     
-    <div style={{paddingLeft:120, paddingRight:120, paddingTop:30}}>
+    <div style={{marginBottom:15}}>
         <Card className={classes.root} elevation={3} onClick={(event) => 
           {window.location.href = props.url}}>
            

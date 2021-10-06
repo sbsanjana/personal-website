@@ -2,7 +2,7 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Link from '@material-ui/core/Link';
-
+import * as navStyles from './nav.module.css'
 function handleClick(event) {
   event.preventDefault();
 //   console.info('You clicked a breadcrumb.');
@@ -10,8 +10,8 @@ function handleClick(event) {
 
 export default function SimpleBreadcrumbs() {
   return (
-    <Breadcrumbs className='navbar' style={{fontWeight:'100', color:'white'}}
-    // style={{fontFamily:"Roboto Mono", fontWeight:'100', fontSize: '25px',
+    <Breadcrumbs className={navStyles.navbar} 
+    // style={{fontFamily:"Roboto Mono÷", fontWeight:'100', fontSize: '25px',
     // color: 'black'}}
     separator="|" aria-label="breadcrumb">
       <Link color="inherit" href="/">

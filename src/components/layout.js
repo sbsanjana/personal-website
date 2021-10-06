@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
+import * as layoutStyles from "./layout.module.css"
 import Nav from  './nav.js'
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
@@ -20,6 +20,8 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import EmailIcon from '@material-ui/icons/Email';
 import DescriptionIcon from '@material-ui/icons/Description';
+import Link from '@material-ui/core/Link';
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -45,15 +47,15 @@ const Layout = ({ children }) => {
   //   height:2000,
   // };
   return (
-    <div style={{paddingLeft:120, paddingRight:120, paddingTop:30}}>
+    <div className={layoutStyles.bigDiv}>
     
     <Grid item
     container
-  direction="row"
-  justifyContent="flex-end"
-  alignItems="baseline"
-  style={{marginBottom:'5em'}} 
->
+    direction="row"
+    justifyContent="flex-end"
+    alignItems="baseline"
+    style={{marginBottom:'5em'}} 
+  >
     <Nav />
     
 
@@ -73,20 +75,42 @@ const Layout = ({ children }) => {
     {/* <div style={circleStyle}>
       </div> */}
     </Grid>
+      <br />
+    <Grid item >
+      <div >
+      <Link href='/contact'>
+    <Button 
+    className={layoutStyles.homeButton}
+    size="large"
+    style={{backgroundColor: '#E07A5F', color: '#FFFFFF'}}
+    >Contact Me</Button>
+     </Link>
+    <> </>
+    
+    <Button 
+    className={layoutStyles.homeButton}
+    size="large"
+    style={{backgroundColor: '#006D77', color: '#FFFFFF'}}
+    onClick={() => {window.location.href = 'https://drive.google.com/file/d/1vji76XmyFtvZLCGL1BRd-yALObf2gwoF/view?usp=sharing/'}}
+    >View My Resume</Button>
+   
+    </div>
+    </Grid>
     <br />
 
     <Grid 
         container
         direction="row"
         sm={12}
+        justifyContent='flex-end'
                 // justifyContent="cente"
         // alignItems="space-evenly"
       >
-    <div style={{marginTop:'3em'}} >
-      <LinkedInIcon style={{color:'white', height:'45px', width:'45', marginRight:'15'}} onClick={() => {window.location.href = 'https://www.linkedin.com/in/sanjanabadhya/'}}/>
-      <GitHubIcon style={{color:'white', height:'45px', width:'45px', marginRight:'15'}} onClick={() => {window.location.href = 'https://www.github.com/sbsanjana'}}/>
-      <EmailIcon style={{color:'white', height:'45px', width:'45px', marginRight:'15'}} onClick={() => {document.location.href = 'mailto:sbsanjana@gmail.com'}}/>
-      <DescriptionIcon style={{color:'white', height:'45px', width:'45px', marginRight:'15'}} onClick={() => {window.location.href = 'https://drive.google.com/file/d/1vji76XmyFtvZLCGL1BRd-yALObf2gwoF/view?usp=sharing/'}}/>
+    <div className={layoutStyles.iconGrid} style={{marginTop:'3em'}} >
+      <LinkedInIcon className={layoutStyles.icon} onClick={() => {window.location.href = 'https://www.linkedin.com/in/sanjanabadhya/'}}/>
+      <GitHubIcon className={layoutStyles.icon} onClick={() => {window.location.href = 'https://www.github.com/sbsanjana'}}/>
+      <EmailIcon className={layoutStyles.icon} onClick={() => {document.location.href = 'mailto:sbsanjana@gmail.com'}}/>
+      <DescriptionIcon className={layoutStyles.icon} onClick={() => {window.location.href = 'https://drive.google.com/file/d/1vji76XmyFtvZLCGL1BRd-yALObf2gwoF/view?usp=sharing/'}}/>
       
     </div>
     </Grid>

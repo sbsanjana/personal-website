@@ -12,32 +12,14 @@ import Paper from '@material-ui/core/Paper';
 import Me from '../images/SanjanaBadhya.jpeg'
 import Me2 from '../images/sanj.png'
 import { withStyles } from '@material-ui/core/styles';
-
+import * as experienceStyle from './experience.module.css'
 import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
 import SchoolIcon from '@material-ui/icons/School';
 
 const IndexPage = () => {
-    const items = [{
-        title: "May 1940",
-        cardTitle: "Dunkirk",
-        cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
-        cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
-        
-      },
-      {
-        title: "May 1940",
-        cardTitle: "Dunkirk",
-        cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
-        cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
-        media: {
-          type: "IMAGE",
-          source: {
-            url: {Me}
-          }
-        }
-      }];
+
     return (
-        <div style={{paddingLeft:120, paddingRight:120, paddingTop:30}}>
+        <div className={experienceStyle.mainDiv}>
              <Grid item
     container 
     direction="row"
@@ -49,7 +31,7 @@ const IndexPage = () => {
 
     <Nav />
 </Grid>
-<h1 style={{ color:'white', fontFamily:'Staatliches', fontWeight:'400', letterSpacing:'0.05em', fontSize:'75px'}}> Experience</h1>
+<h1 className={experienceStyle.title}  style={{fontStyle:'italic'}}> experience</h1>
 <br />
 <Grid item
     container 
