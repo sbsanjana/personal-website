@@ -75,6 +75,7 @@ const Layout = ({ children }) => {
     </Grid>
       <br />
     <Grid item >
+      <div >
     <Button 
     className={layoutStyles.homeButton}
     size="large"
@@ -86,6 +87,7 @@ const Layout = ({ children }) => {
     size="large"
     style={{backgroundColor: '#006D77', color: '#FFFFFF'}}
     >View My Resume</Button>
+    </div>
     </Grid>
     <br />
 
@@ -93,14 +95,15 @@ const Layout = ({ children }) => {
         container
         direction="row"
         sm={12}
+        justifyContent='flex-end'
                 // justifyContent="cente"
         // alignItems="space-evenly"
       >
-    <div style={{marginTop:'3em'}} >
-      <LinkedInIcon style={{color:'white', height:'45px', width:'45', marginRight:'15'}} onClick={() => {window.location.href = 'https://www.linkedin.com/in/sanjanabadhya/'}}/>
-      <GitHubIcon style={{color:'white', height:'45px', width:'45px', marginRight:'15'}} onClick={() => {window.location.href = 'https://www.github.com/sbsanjana'}}/>
-      <EmailIcon style={{color:'white', height:'45px', width:'45px', marginRight:'15'}} onClick={() => {document.location.href = 'mailto:sbsanjana@gmail.com'}}/>
-      <DescriptionIcon style={{color:'white', height:'45px', width:'45px', marginRight:'15'}} onClick={() => {window.location.href = 'https://drive.google.com/file/d/1vji76XmyFtvZLCGL1BRd-yALObf2gwoF/view?usp=sharing/'}}/>
+    <div className={layoutStyles.iconGrid} style={{marginTop:'3em'}} >
+      <LinkedInIcon className={layoutStyles.icon} onClick={() => {window.location.href = 'https://www.linkedin.com/in/sanjanabadhya/'}}/>
+      <GitHubIcon className={layoutStyles.icon} onClick={() => {window.location.href = 'https://www.github.com/sbsanjana'}}/>
+      <EmailIcon className={layoutStyles.icon} onClick={() => {document.location.href = 'mailto:sbsanjana@gmail.com'}}/>
+      <DescriptionIcon className={layoutStyles.icon} onClick={() => {window.location.href = 'https://drive.google.com/file/d/1vji76XmyFtvZLCGL1BRd-yALObf2gwoF/view?usp=sharing/'}}/>
       
     </div>
     </Grid>

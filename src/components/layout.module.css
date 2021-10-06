@@ -7,10 +7,25 @@ and (max-device-width : 480px) {
     padding:30px;
   }
   .homeButton{
-    width:170px;
+    width:200px;
     margin-right:40px;
     margin-bottom: 30px;
   }
+  .icon{
+    height:40px;
+    width: 40px;
+    margin-right:10px;
+  }
+  .icon:hover{
+    /* text-shadow: 0 0 10px blue; */
+    filter: drop-shadow(2px 0px 0px black);
+    cursor: pointer;
+  }
+  /* .iconGrid {
+    display: flex;
+    justify-content: center;
+  } */
+
 }
 
 /* Smartphones (landscape) ----------- */
@@ -24,6 +39,17 @@ and (min-width : 321px) {
     margin-right:40px;
     margin-bottom: 30px;
   }
+  .icon{
+    height:40px;
+    width: 40px;
+    margin-right:10px;
+  }
+  .icon:hover{
+    /* text-shadow: 0 0 10px blue; */
+    filter: drop-shadow(2px 0px 0px black);
+    cursor: pointer;
+  }
+  
 }
 
 /* Smartphones (portrait) ----------- */
@@ -37,6 +63,16 @@ and (max-width : 320px) {
     margin-right:40px;
     margin-bottom: 30px;
   }
+  .icon{
+    height:40px;
+    width: 40px;
+    margin-right:10px;
+  }
+  .icon:hover{
+    /* text-shadow: 0 0 10px blue; */
+    filter: drop-shadow(2px 0px 0px black);
+    cursor: pointer;
+  }
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -49,6 +85,16 @@ and (max-device-width : 1024px) {
   .homeButton{
     width:170px;
     margin-right:40px;
+  }
+  .icon{
+    height:60px;
+    width: 60px;
+    margin-right:10px;
+  }
+  .icon:hover{
+    /* text-shadow: 0 0 10px blue; */
+    filter: drop-shadow(2px 0px 0px black);
+    cursor: pointer;
   }
 }
 
@@ -64,6 +110,17 @@ and (orientation : landscape) {
     width:170px;
     margin-right:40px;
   }
+  .icon{
+    height:60px;
+    width: 60px;
+    margin-right:10px;
+  }
+  .icon:hover{
+    /* text-shadow: 0 0 10px blue; */
+    filter: drop-shadow(2px 0px 0px black);
+    cursor: pointer;
+  }
+
 }
 
 /* iPads (portrait) ----------- */
@@ -78,6 +135,16 @@ and (orientation : portrait) {
     width:170px;
     margin-right:40px;
   }
+  .icon{
+    height:60px;
+    width: 60px;
+    margin-right:10px;
+  }
+  .icon:hover{
+    /* text-shadow: 0 0 10px blue; */
+    filter: drop-shadow(2px 0px 0px black);
+    cursor: pointer;
+  }
 }
 
 /* Desktops and laptops ----------- */
@@ -90,6 +157,17 @@ and (min-width : 1224px) {
   width:200px;
   margin-right:50px;
 }
+.icon{
+  height:60px;
+  width: 60px;
+  margin-right:10px;
+}
+.icon:hover{
+  /* text-shadow: 0 0 10px blue; */
+  filter: drop-shadow(2px 0px 0px black);
+  cursor: pointer;
+}
+
 }
 
 /* Large screens ----------- */
