@@ -29,12 +29,13 @@ import Typography from '@material-ui/core/Typography';
 import Project from '../components/proj'
 import Proj from '../components/proj';
 
+import * as projectStyles from './projects.module.css'
 
  
 
 function Projects()  {
     return (
-        <div  style={{paddingLeft:120, paddingRight:120, paddingTop:30}}>
+        <div className={projectStyles.mainDiv}>
         <Grid item
         container 
         direction="row"
@@ -44,25 +45,31 @@ function Projects()  {
         <Nav />
     </Grid>
 
-    <h1 style={{ color:'white', fontFamily:'Staatliches', fontWeight:'400', letterSpacing:'0.05em', fontSize:'75px'}}> Projects</h1>
-    <div style={{paddingRight:40}}>
+    <h1 className={projectStyles.title}> projects</h1>
+   
+    <div className={projectStyles.cardDiv}>
 
-    <Grid item container justifyContent='center' alignItems='baseline'> 
+    
+    <Grid item container spacing={1} > 
 
     <Grid item
     container
-    sm={6} xs={10}  md={4}>
+    sm={6}  xs={10}  md={4} >
     <Proj
+    className={projectStyles.project}
     title='FactCheck'
     desc="A machine learning model run via Flask, Python, and React in order to allow users to identify whether a news headline is true or not."
     pic={Fact}
-    url='https://devpost.com/software/factcheck'/>
+    url='https://devpost.com/software/factcheck'
+   
+    />
+    
 
     </Grid>
 
     <Grid item
     container
-    sm={6} xs={10}  md={4}>
+    sm={6}  xs={10}  md={4} >
 
         <Proj
         title='Creative Connect'
@@ -74,7 +81,7 @@ function Projects()  {
 
     <Grid item
     container
-    sm={6} xs={10}  md={4}>
+    sm={6}  xs={10}  md={4}>
 
         <Proj
         title='Koble'
@@ -84,14 +91,14 @@ function Projects()  {
 
     </Grid>
 
-</Grid>
+{/* </Grid> */}
 
 
-<Grid item container justifyContent='center' alignItems='baseline'> 
+{/* <Grid item container justifyContent='center' alignItems='baseline'>  */}
 
     <Grid item
     container
-    sm={8} xs={10} md={4}>
+    sm={6}  xs={10}  md={4}>
         <Proj
         title='Popcorn'
         desc="A platform build to reinvent CS education among those curious to learn, regarless of skill."
@@ -101,7 +108,7 @@ function Projects()  {
 
     <Grid item
     container
-    sm={8} xs={10}  md={4}>
+    sm={6}  xs={10}   md={4} >
         <Proj
         title='TravelBerlin'
         desc="An application where users can explore various attractions in Berlin while interacting with both, these attractions, and other users."
@@ -110,7 +117,7 @@ function Projects()  {
 
 <Grid item
 container
-sm={8} xs={10}  md={4}>
+sm={6} xs={10} md={2} >
         <Proj
 title='SmartTasking'
 desc="Build to increase productivity with easy to organize tasks combined with a smart ranking system to maximize your time."

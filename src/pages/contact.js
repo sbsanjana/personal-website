@@ -17,7 +17,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import EmailIcon from '@material-ui/icons/Email';
 import DescriptionIcon from '@material-ui/icons/Description';
 
-
+import * as aboutStyles from './about.module.css'
 
 const IndexPage = () => (
 
