@@ -4,6 +4,7 @@
  *
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
+import {Helmet} from 'react-helmet'
 
 import * as React from "react"
 import PropTypes from "prop-types"
@@ -48,6 +49,11 @@ const Layout = ({ children }) => {
   // };
   return (
     <>
+    <Helmet>
+      <html lang='en' />
+      <title>{data.site.siteMetadata.title}</title>
+      {/* <meta name='description' content={data.site.siteMetadata.title} /> */}
+</Helmet>
     <div siteTitle={data.site.siteMetadata.title} className={layoutStyles.bigDiv}>
 
 
