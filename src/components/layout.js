@@ -47,8 +47,10 @@ const Layout = ({ children }) => {
   //   height:2000,
   // };
   return (
-    <div className={layoutStyles.bigDiv}>
-    
+    <>
+    <div siteTitle={data.site.siteMetadata.title} className={layoutStyles.bigDiv}>
+
+
     <Grid item
     container
     direction="row"
@@ -91,7 +93,7 @@ const Layout = ({ children }) => {
     className={layoutStyles.homeButton}
     size="large"
     style={{backgroundColor: '#006D77', color: '#FFFFFF'}}
-    onClick={() => {window.location.href = 'https://drive.google.com/file/d/1vji76XmyFtvZLCGL1BRd-yALObf2gwoF/view?usp=sharing/'}}
+    onClick={() => {window.location.href = 'https://drive.google.com/file/d/1_UyFFXy5GZrilNGqXuXjse9BSfnAWfUl/view?usp=sharing'}}
     >View My Resume</Button>
    
     </div>
@@ -116,6 +118,7 @@ const Layout = ({ children }) => {
     </Grid>
  
     </div>
+    </>
   )
 }
 
